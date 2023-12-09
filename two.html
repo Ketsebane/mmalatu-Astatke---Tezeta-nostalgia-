@@ -1,0 +1,105 @@
+<!--not for submission: it was a tryout, but r><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRG</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      /*
+
+      section div {
+        display: none;
+      }
+
+      section div:target {
+        display: block;
+      }
+
+      /* Additional style to hide the images by default */
+      section div img {
+        width: 100%;
+      }
+
+      #one {
+        display: block;
+      }
+
+      /* Hide the first div when another div is targeted */
+      #one:target ~ div {
+        display: none;
+      }
+
+      section div img {
+        width: 100%;
+      }
+      section div {
+        display: none;
+      }
+
+      section div.default {
+        display: block;
+      }
+
+      section div:target {
+        display: block;
+      }
+
+      section:has(div:target) .default {
+        border: 2rem solid red;
+        display: none;
+      }
+      /*
+      #one:target,
+      :not(:target) #one {
+        display: block;
+      }
+      
+
+      #one {
+        display: block;
+      }
+
+      #one:not(:target) {
+        display: none;
+      }
+
+      section :not(:target) {
+        border: 2rem solid green;
+      }
+      /*
+      section div:first-child {
+        display: block;
+      }
+
+      section div:not(:target):not(:first-child) {
+        border: 2rem solid red;
+        display: none;
+      }
+
+
+      section div:target:not(:first-child) {
+        border: 2rem solid yellow;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <main id="root">
+      <section>
+        <div class="default"><img src="photos/beautiful.jpg" /></div>
+        <div id="two"><img src="photos/frienship.jpg" /></div>
+        <div id="three"><img src="photos/warmth.jpg" /></div>
+      </section>
+      <ul>
+        <li><a href="two.html">zero</a></li>
+        <li><a href="#two">g-two</a></li>
+        <li><a href="#three">g-three</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
